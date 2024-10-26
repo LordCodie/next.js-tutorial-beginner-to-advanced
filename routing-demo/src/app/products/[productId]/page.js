@@ -9,8 +9,10 @@ export const generateMetadata = async ({params}) => {
     })
 }
 
-export default function ProductDetails({params}) {
+
+export default function ProductDetails({ params }) {
     return (
+
         <>
             <h1>Details About Product {params.productId}</h1>
         </>

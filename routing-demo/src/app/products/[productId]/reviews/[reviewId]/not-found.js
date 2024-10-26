@@ -1,7 +1,7 @@
 export default function NotFound() {
     return (
         <div>
-            <h2>Review not found</h2>
+            <h1>Review not found</h1>
         </div>
     )
 }

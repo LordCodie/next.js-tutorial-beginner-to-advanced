@@ -1,8 +1,10 @@
 export const metadata = {
-    title: 'About Codevolutioon'
-    
-}
+    title: 'About Myevolution',
+    description: '...',
+  }
 
-export default function About() {
-    return <h1>About Me</h1>
+export default function Page(){
+    return (
+        <h1>About Me</h1>
+    )
 }
