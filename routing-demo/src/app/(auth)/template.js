@@ -12,29 +12,34 @@ const navLinks = [
 ];
 
 export default function AuthLayout({ children }) {
-    const pathName = usePathname();
+    const pathname = usePathname()
     const [input, setInput] = useState("")
     return (
         <div>
             <div>
                 <input value={input} onChange={e => setInput(e.target.value)} />
             </div>
-            {navLinks.map((link, index) => {
-                const isActive = pathName.startsWith(link.href)
-                return (
-                    <>
-                        <Link href={link.href} key={link.name}
-                            className={isActive ? "font-bold mr-4" : "text-blue-500"}
-                        >
-                            {link.name}
-                        </Link>
-                        <br />
-                    </>
-                )
-            })}
-            <br />
-            {children}
-            <br />
+            <div>
+                {navLinks.map((link) => {
+                    const isAlive = pathname.startsWith(link.href)
+                    return (
+                        <>
+                            <br />
+                            <Link
+                                href={link.href}
+                                key={link.name}
+                                className={isAlive ?
+                                    "font-bold mr-4" : "text-blue-500 mr-4"}
+                            >
+                                {link.name}
+                            </Link>
+                            <br />
+                            <br />
+                        </>
+                    )
+                })}
+                {children}
+            </div>
         </div>
     );
 };

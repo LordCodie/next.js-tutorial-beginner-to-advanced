@@ -1,10 +1,7 @@
 export const metadata = {
-    title: 'About Myevolution',
-    description: '...',
+    title: 'About Me Info',
   }
 
-export default function Page(){
-    return (
-        <h1>About Me</h1>
-    )
+export default function About() {
+    return <h1>About Me</h1>
 }
