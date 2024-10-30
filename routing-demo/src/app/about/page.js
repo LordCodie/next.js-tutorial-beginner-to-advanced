@@ -1,6 +1,6 @@
 export const metadata = {
-    title: 'About Me Info',
-  }
+    title: "About Attempt 5"
+}
 
 export default function About() {
     return <h1>About Me</h1>
