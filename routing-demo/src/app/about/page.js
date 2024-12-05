@@ -1,7 +1,8 @@
 export const metadata = {
-    title: "Attempt Eight"
+    title: "About Attempt Nine"
 }
 
+
 export default function AboutPage() {
-    return <h1>About Me</h1>
+    return <h1>About Page</h1>
 }

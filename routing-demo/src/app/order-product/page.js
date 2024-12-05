@@ -2,18 +2,21 @@
 
 import { useRouter } from "next/navigation"
 
-export default function OrderProduct() {
+export default function OrderProductPage() {
     const router = useRouter()
 
     const handleClick = () => {
-        console.log('Placing your order...')
-        router.replace("/")
+        console.log('placing order...')
+        router.replace('/')
     }
 
     return (
         <>
-            <h1>Order Product</h1>
+            <h1>Order product</h1>
+            <br />
             <button onClick={handleClick}>Place order</button>
+            <br />
+            <br />
         </>
     )
 }

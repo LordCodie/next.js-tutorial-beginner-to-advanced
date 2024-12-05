@@ -1,8 +1,8 @@
-export default function ProoductDetailsLayout({ children }) {
+export default function ProductDetailsLayout({ children }) {
     return (
-        <>
+        <div>
             {children}
-            <h2>Featured Products</h2>
-        </>
+            <h2>Featured products</h2>
+        </div>
     )
 }

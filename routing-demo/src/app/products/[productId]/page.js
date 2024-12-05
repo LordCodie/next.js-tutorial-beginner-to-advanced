@@ -1,14 +1,14 @@
 export const generateMetadata = async ({ params }) => {
-    const title = await new Promise(resolve => {
+    const title = await new Promise(reslove => {
         setTimeout(() => {
-            resolve(`iPhone ${params.productId}`)
+            reslove(`iPhone ${params.productId}`) 
         }, 100)
     })
     return {
-        title: `Product - ${title}`
+        title: `Product ${title}`
     }
 }
 
 export default function ProductDetails({ params }) {
-    return <h1>Details about product {params.productId} </h1>
+    return <h1>Details about product {params.productId}</h1>
 }
